@@ -1,5 +1,4 @@
 ### Description: This script runs sensitivity analysis GAM Model (with and without spatial term) --------------------------------------------
-
 #Clean environment 
 rm(list=ls())
 
@@ -59,7 +58,7 @@ census_tracts_ses <- census_tracts_ses %>%
   left_join(lodes_wac, by = "geoid") 
 
 # Loading traffic data
-traffic_data <- read.csv("data/cleaned_data/se_pt_traffic_long.csv") %>% clean_names()
+traffic_data <- read.csv("data/cleaned_data/se_pt_traffic_long_simulated.csv") %>% clean_names()
 
 # Loading tracts with os --> (2020 census tracts)
 os_tracts_2020 <- read.csv("data/joins/os_tracts_2020.csv") %>% clean_names() %>% 

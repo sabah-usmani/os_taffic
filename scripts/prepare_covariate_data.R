@@ -1,5 +1,5 @@
-
 #### Description: This script prepares data for analysis ----------------------- #### 
+
 #Installing and loading relevant packages if not already installed 
 #install.packages("tidyverse")
 #install.packages("readxl")
@@ -325,5 +325,4 @@ nyc_wac <- ny_wac[substr(ny_wac$w_tract, 1, 5) %in% nyc_fips, ] %>%
 
 #save LODES data as a csv
 write.csv(nyc_wac, file = 'data/joins/nyc_lodes_wac.csv' , row.names = FALSE)
-
    
