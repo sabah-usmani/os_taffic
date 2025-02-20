@@ -2,3 +2,4 @@
 .Rhistory
 .RData
 .Ruserdata
+data/cleaned_data/traffic_covar.csv
