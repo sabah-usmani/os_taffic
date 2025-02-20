@@ -1,6 +1,6 @@
 # NYC_open_streets_and_traffic
 
-This repository contains the code for the analysis of the open streets impact on traffic vulume in New York City. The traffic data (simulated) provided is for code review purposes only. 
+This repository contains the code for the analysis of the open streets impact on traffic volume in New York City. The traffic data (simulated) provided is for code review purposes only. 
 
 ## Scripts
 
