@@ -94,11 +94,10 @@ traffic_os_joined <- traffic_data %>%
   mutate(post = if_else(str_detect(my, "21"), 1, 0)) %>% 
   select(-tractid, -boro_name)
 
-#Joining spillover variable (contiguous percentage contiguous OS tracts) 
+#Joining spillover variable (percentage contiguous OS tracts) 
 #joining traffic and spillover data 
 traffic_spill <- traffic_os_joined %>% 
   left_join(spillover, by = c("br_2020" = "zone_name")) %>% 
-  #excluding contiguous tracts
   mutate(treat_post = treat * post)%>% 
 #For island tracts, perc_treat == 0 because no contiguous tracts 
   mutate(perc_treated = if_else(is.na(perc_treated), 0, perc_treated)) %>% 
